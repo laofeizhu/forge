@@ -1,0 +1,2 @@
+title = "The big picture: your first compiler"
+werror = true   # from here on, a warning fails the build (it was the bug more than once in chapter 0)

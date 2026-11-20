@@ -1,0 +1,6 @@
+title = "How many reallocs?"
+kind = "quiz"
+difficulty = "easy"
+choices = ["100", "7", "5", "4"]
+answer = 2
+explain = "Capacity goes 0 → 8 → 16 → 32 → 64 → 128. Each arrow is one realloc: 5 in total. Doubling makes growth logarithmic in the number of pushes."

@@ -1,0 +1,6 @@
+title = "Round up"
+kind = "predict"
+difficulty = "easy"
+answer = "16 16 24"
+explain = "13 rounds up to the next multiple of 8 (16); 16 is already aligned and stays 16; 17 rounds up to 24."
+wrong = "Round up to the next multiple of 8 — but a number that is already a multiple stays put."

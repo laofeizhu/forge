@@ -1,0 +1,6 @@
+title = "Identifier characters"
+kind = "code"
+difficulty = "easy"
+est_minutes = 10
+[files]
+edit = ["ident.c"]

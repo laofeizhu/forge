@@ -1,0 +1,16 @@
+title = "Hand-compile (4 + 3) * 6"
+kind = "code"
+difficulty = "easy"
+est_minutes = 10
+e2e_program = "asm"   # your .s file *is* the program: forge assembles it with cc and runs it
+[files]
+edit = ["answer.s"]
+
+[[e2e]]
+name = "exit_code_is_42"
+exit_code = 42
+
+[[e2e]]
+name = "really_multiplies"
+exit_code = 42
+asm_contains = ["mul", "add"]

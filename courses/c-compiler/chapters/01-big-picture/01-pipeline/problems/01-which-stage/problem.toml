@@ -1,0 +1,7 @@
+title = "Which stage notices?"
+kind = "quiz"
+difficulty = "easy"
+choices = ["the lexer", "the parser", "the code generator", "the assembler"]
+answer = 1
+explain = "Every token in `int main() { return 42 }` is a fine token. What's wrong is the order: the grammar says `return` Expr `;`. Checking order is the parser's job."
+wrong = "Look at each token on its own first. Is any of them invalid by itself?"

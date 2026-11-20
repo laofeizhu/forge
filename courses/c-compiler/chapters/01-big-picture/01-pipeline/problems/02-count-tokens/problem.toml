@@ -1,0 +1,6 @@
+title = "Count the tokens"
+kind = "predict"
+difficulty = "easy"
+answer = "9"
+explain = "int · main · ( · ) · { · return · 42 · ; · }: whitespace separates tokens but isn't one, and `42` is one token, not two."
+wrong = "Write them out one per line. Spaces aren't tokens; a number is a single token however many digits it has."

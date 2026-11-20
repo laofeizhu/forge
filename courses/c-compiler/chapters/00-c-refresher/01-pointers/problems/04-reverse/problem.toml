@@ -1,0 +1,6 @@
+title = "reverse() in place"
+kind = "code"
+difficulty = "easy"
+est_minutes = 10
+[files]
+edit = ["reverse.c"]

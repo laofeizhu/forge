@@ -1,0 +1,6 @@
+title = "StrBuf: a string builder"
+kind = "code"
+difficulty = "medium"
+est_minutes = 20
+[files]
+edit = ["strbuf.c"]

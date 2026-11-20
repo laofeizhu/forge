@@ -1,0 +1,7 @@
+title = "next_token(): a tiny lexer"
+kind = "code"
+mode = "project"
+difficulty = "medium"
+est_minutes = 20
+[files]
+edit = ["src/token.c"]

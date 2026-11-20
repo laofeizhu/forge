@@ -1,0 +1,7 @@
+title = "C integer literals"
+kind = "code"
+difficulty = "hard"
+challenge = true
+est_minutes = 30
+[files]
+edit = ["int_literal.c"]

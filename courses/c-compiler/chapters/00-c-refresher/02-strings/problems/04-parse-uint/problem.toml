@@ -1,0 +1,6 @@
+title = "parse_uint() with an end pointer"
+kind = "code"
+difficulty = "medium"
+est_minutes = 15
+[files]
+edit = ["parse_uint.c"]

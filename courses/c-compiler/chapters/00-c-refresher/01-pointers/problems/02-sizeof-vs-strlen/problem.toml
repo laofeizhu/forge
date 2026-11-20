@@ -1,0 +1,6 @@
+title = "sizeof vs strlen"
+kind = "predict"
+difficulty = "easy"
+answer = "6 8 5"
+explain = "sizeof s counts the array including the '\\0' terminator (6). sizeof p is the size of a pointer on arm64 (8). strlen counts characters up to, not including, '\\0' (5)."
+wrong = "Three different questions: how big is the array, how big is a pointer, how many characters before the '\\0'?"

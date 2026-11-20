@@ -1,0 +1,7 @@
+title = "Where does p point?"
+kind = "quiz"
+difficulty = "easy"
+choices = ["20", "30", "40", "1008 (an address)"]
+answer = 1
+explain = "p starts at a+1 (the 20). p++ moves one *element* forward, to a[2]. *p reads the value there: 30."
+wrong = "Remember: p + 1 moves one element, not one byte, and *p reads the value, not the address."

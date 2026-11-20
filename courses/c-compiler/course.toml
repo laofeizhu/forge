@@ -1,0 +1,3 @@
+title = "Build a C Compiler in C"
+description = "Write a compiler for a subset of C that emits arm64 assembly, one small step at a time."
+target = "arm64-apple-darwin"

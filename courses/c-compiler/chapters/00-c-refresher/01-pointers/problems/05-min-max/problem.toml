@@ -1,0 +1,6 @@
+title = "min_max() with out-parameters"
+kind = "code"
+difficulty = "easy"
+est_minutes = 10
+[files]
+edit = ["min_max.c"]

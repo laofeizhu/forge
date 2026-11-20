@@ -1,0 +1,6 @@
+title = "Trace the cursor"
+kind = "predict"
+difficulty = "easy"
+answer = "12"
+explain = "int (0-2) · space (3) · main (4-7) · ( (8) · ) (9) · space (10) · { (11). After matching `{` the cursor is one past it: offset 12, pointing at the space before `return`."
+wrong = "Number every char from 0, including the spaces. After a match, p points one past the last matched char."

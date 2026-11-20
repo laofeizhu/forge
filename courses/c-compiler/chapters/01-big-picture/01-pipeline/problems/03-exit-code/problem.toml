@@ -1,0 +1,6 @@
+title = "What does the shell see?"
+kind = "predict"
+difficulty = "easy"
+answer = "44"
+explain = "Only the low 8 bits survive: 300 = 256 + 44, so 300 & 255 = 44. (In binary: 1_0010_1100 → 0010_1100.)"
+wrong = "The exit code is value & 255. How much of 300 is left over after removing 256?"

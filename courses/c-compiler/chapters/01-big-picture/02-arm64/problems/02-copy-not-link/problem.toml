@@ -1,0 +1,6 @@
+title = "Copy, not link"
+kind = "predict"
+difficulty = "easy"
+answer = "4"
+explain = "`mov x0, x1` copies the value 3 into x0. Changing x1 to 9 afterwards doesn't touch x0, the same way `int b = a; a = 9;` leaves b alone, or `free(p)` can't change your p. Then x0 = 3 + 1 = 4."
+wrong = "After `mov x0, x1`, are x0 and x1 connected in any way? Trace both columns row by row."

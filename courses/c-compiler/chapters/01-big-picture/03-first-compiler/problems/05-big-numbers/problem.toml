@@ -1,0 +1,42 @@
+title = "Big numbers: movz + movk"
+kind = "code"
+mode = "project"
+difficulty = "hard"
+challenge = true
+est_minutes = 40
+[files]
+edit = ["src/codegen.c", "src/compile.c"]
+
+[[e2e]]
+name = "still_small"
+source = "int main() { return 42; }\n"
+exit_code = 42
+
+[[e2e]]
+name = "seventy_thousand"
+source = "int main() { return 70000; }\n"
+exit_code = 70000
+
+[[e2e]]
+name = "two_to_the_32"
+source = "int main() { return 4294967296; }\n"
+exit_code = 0
+hidden = true
+
+[[e2e]]
+name = "int64_max"
+source = "int main() { return 9223372036854775807; }\n"
+exit_code = 255
+hidden = true
+
+[[e2e]]
+name = "rejects_overflow"
+source = "int main() { return 9223372036854775808; }\n"
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_way_too_big"
+source = "int main() { return 99999999999999999999999; }\n"
+expect_compile_error = true
+hidden = true

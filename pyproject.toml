@@ -1,0 +1,19 @@
+[project]
+name = "forge"
+version = "0.1.0"
+description = "Learn by building, in the terminal: LeetCode-style hands-on courses with a built-in vim."
+readme = "README.md"
+authors = [
+    { name = "laofeizhu", email = "laofeizhu@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "textual>=8.2.8",
+]
+
+[project.scripts]
+forge = "forge:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

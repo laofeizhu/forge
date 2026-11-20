@@ -1,0 +1,7 @@
+title = "emit_program()"
+kind = "code"
+mode = "project"
+difficulty = "easy"
+est_minutes = 10
+[files]
+edit = ["src/codegen.c"]

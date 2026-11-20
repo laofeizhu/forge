@@ -1,0 +1,7 @@
+title = "sb_appendf(): printf into a builder"
+kind = "code"
+difficulty = "hard"
+challenge = true
+est_minutes = 25
+[files]
+edit = ["strbuf.c"]

@@ -1,0 +1,6 @@
+title = "swap()"
+kind = "code"
+difficulty = "easy"
+est_minutes = 5
+[files]
+edit = ["swap.c"]

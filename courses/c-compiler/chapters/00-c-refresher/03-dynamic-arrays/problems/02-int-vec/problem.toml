@@ -1,0 +1,6 @@
+title = "IntVec: a growable array"
+kind = "code"
+difficulty = "medium"
+est_minutes = 20
+[files]
+edit = ["vec.c"]

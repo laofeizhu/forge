@@ -1,0 +1,6 @@
+title = "Trace the registers"
+kind = "predict"
+difficulty = "easy"
+answer = "10"
+explain = "x0=5, x1=7, x0=5+7=12, x0=12-2=10, ret → exit code 10."
+wrong = "Make the table: one row per instruction, columns x0 and x1. Destination is the first operand."

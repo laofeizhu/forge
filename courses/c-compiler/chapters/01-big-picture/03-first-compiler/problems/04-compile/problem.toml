@@ -1,0 +1,88 @@
+title = "compile(): int main() { return N; }"
+kind = "code"
+mode = "project"
+difficulty = "medium"
+est_minutes = 30
+[files]
+edit = ["src/compile.c"]
+
+[[e2e]]
+name = "return_42"
+source = "int main() { return 42; }\n"
+exit_code = 42
+
+[[e2e]]
+name = "no_spaces"
+source = "int main(){return 7;}\n"
+exit_code = 7
+
+[[e2e]]
+name = "rejects_missing_semicolon"
+source = "int main() { return 42 }\n"
+expect_compile_error = true
+
+[[e2e]]
+name = "newlines_and_tabs"
+source = "int\nmain\t(\n)\n{\n    return 255;\n}\n"
+exit_code = 255
+hidden = true
+
+[[e2e]]
+name = "return_0"
+source = "int main() { return 0; }"
+exit_code = 0
+hidden = true
+
+[[e2e]]
+name = "leading_whitespace"
+source = "\n\n   int main() { return 3; }   \n\n"
+exit_code = 3
+hidden = true
+
+[[e2e]]
+name = "rejects_glued_words"
+source = "intmain() { return 1; }\n"
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_return_glued"
+source = "int main() { return42; }\n"
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_leading_zero"
+source = "int main() { return 007; }\n"
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_not_a_number"
+source = "int main() { return x; }\n"
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_trailing_garbage"
+source = "int main() { return 1; } }\n"
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_empty_file"
+source = ""
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_cut_short"
+source = "int main() { return 1;"
+expect_compile_error = true
+hidden = true
+
+[[e2e]]
+name = "rejects_number_glued"
+source = "int main() { return 42abc; }\n"
+expect_compile_error = true
+hidden = true

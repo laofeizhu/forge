@@ -1,0 +1,6 @@
+title = "Char arithmetic"
+kind = "quiz"
+difficulty = "easy"
+choices = ["55", "7", "'7'", "It doesn't compile"]
+answer = 1
+explain = "'7' is 55 and '0' is 48, so '7' - '0' is 7 — the digit's numeric value. This is how every number parser turns characters into digits."

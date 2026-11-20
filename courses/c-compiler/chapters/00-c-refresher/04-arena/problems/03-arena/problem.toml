@@ -1,0 +1,6 @@
+title = "Arena allocator"
+kind = "code"
+difficulty = "medium"
+est_minutes = 25
+[files]
+edit = ["arena.c"]

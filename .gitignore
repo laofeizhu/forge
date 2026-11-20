@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+# stray local progress state
+/c-compiler.json
+/c-compiler/

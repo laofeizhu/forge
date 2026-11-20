@@ -1,0 +1,12 @@
+title = "Why _main?"
+kind = "quiz"
+difficulty = "easy"
+choices = [
+  "macOS adds a leading _ to every C-level name, so the linker knows C's main as _main",
+  "the underscore marks the function as private",
+  "arm64 requires every label to start with _",
+  "it's optional: main and _main both work",
+]
+answer = 0
+explain = "It's a naming convention of the platform (Mach-O): C's `main` is the symbol `_main`, `putchar` is `_putchar`. Linux doesn't add the underscore; macOS does."
+wrong = "The convention applies to every C name, not just main. Think about what `putchar` would be called."
